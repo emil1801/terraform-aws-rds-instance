@@ -23,16 +23,16 @@ module "rds" {
     ]
 }
 output "region" {
-	value = module.wordpress_db.region
+	value = module.rds_db.region
 }
 output "subnet_list" {
-	value = module.wordpress_db.subnet_list
+	value = module.rds_db.subnet_list
 }
 output "allowed_hosts" {
-	value = module.wordpress_db.allowed_hosts
+	value = module.rds_db.allowed_hosts
 }
 output "wordpress_db_NAME" {
-	value = module.wordpress_db.DB_NAME
+	value = module.rds_db.DB_NAME
 }
 ```
 
